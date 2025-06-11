@@ -15,7 +15,7 @@ st.set_page_config(page_title="Forecast USD/IDR", layout="centered")
 st.title("📈 Prediksi Nilai Tukar USD ke IDR")
 st.subheader("Model: LSTM + Variabel Makroekonomi")
 
-df = pd.read_excel("data/hasil_prediksi.xlsx")
+df = pd.read_excel("hasil_prediksi.xlsx")
 
 st.write("📄 Data Hasil Prediksi vs Aktual:")
 st.dataframe(df[['Tanggal', 'Actual', 'Predicted']])
